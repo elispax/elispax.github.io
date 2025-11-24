@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Konduit App – UX/UI Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  background: linear-gradient(180deg, #0b1324, #121a2f);
+  color: #e6e6e6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+        .case-hero {
+  padding: 80px 8% 40px;
+}
+
+.case-hero-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.case-hero-text {
+  flex: 1;
+}
+
+.case-hero h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #bfc7d8;
+}
+
+.case-hero-image {
+  flex: 1.2;
+}
+
+.case-hero-image img {
+  border-radius: 8px;
+}
+
+.case-context {
+  padding: 60px 8%;
+  display: flex;
+  gap: 80px;
+}
+
+.case-context h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.case-context p,
+.case-context li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #bfc7d8;
+}
+
+.case-context ul {
+  padding-left: 18px;
+}
+
+.wireframing {
+  padding: 60px 8%;
+}
+
+.wireframing h2 {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.wireframe-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+
+.approach h3 {
+  margin-bottom: 15px;
+}
+
+.approach li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #bfc7d8;
+}
+
+.final-interface {
+  padding: 80px 8%;
+}
+
+.final-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.final-layout img {
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .case-hero-content,
+  .case-context,
+  .wireframe-layout,
+  .final-interface {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .final-screens {
+    justify-content: center;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="./index.html">elisapaci</a>
+        <a href="./info.html">info</a>
+        <a href="./logos.html">logos</a>
+        <a href="https://www.elisapaciphotography.com/">photos</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="case-hero">
+  <div class="case-hero-content">
+
+    <div class="case-hero-text">
+      <h1>Kond﻿uit App — UX/UI Case Study</h1>
+      <p class="subtitle">
+        Crypto payment mobile app<br>
+        UX/UI Designer | 2025
+      </p>
+
+      <p class="intro">
+        KonduitChannel needed a mobile app for crypto payments that felt as simple as a traditional banking app. 
+        The main challenge was making complex crypto actions accessible to users with different levels of technical experience.
+      </p>
+    </div>
+
+    <div class="case-hero-image">
+      <img src="./images/konduit-overview.png" alt="Konduit app interface overview" />
+    </div>
+
+  </div>
+</section>
+
+<!-- Challenge + Key Considerations -->
+<section class="case-context">
+<div class="challenge">
+<h2>Challenge:</h2>
+<p>
+Crypto actions are inherently complex and can be intimidating. The main challenge was reducing this complexity while maintaining accuracy and security.
+</p>
+</div>
+
+
+<div class="key-considerations">
+<h2>Key considerations:</h2>
+<ul>
+<li>Simplify navigation and flows</li>
+<li>Avoid overwhelming users with technical vocabulary</li>
+<li>Reduce cognitive load by referencing familiar banking app patterns</li>
+</ul>
+</div>
+</section>
+
+
+<!-- Wireframing & Flow -->
+<section class="wireframing">
+<h2>Wireframing and flow</h2>
+
+
+<div class="wireframe-layout">
+<div class="wireframe-image">
+<img src="./images/konduit-wireframe.png" alt="Konduit wireframes and user flow" />
+</div>
+
+
+<div class="approach">
+<h3>Approach</h3>
+<ul>
+<li>Iterated with the client to simplify flows and remove unnecessary steps</li>
+<li>Created low-fidelity wireframes to define hierarchy, navigation and core actions</li>
+<li>Mapped user journeys and identified information redundancies that could create confusion</li>
+<li>Designed flows based on familiar patterns from banking apps to reduce cognitive load</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section class="final-interface">
+
+  <div class="final-layout">
+    
+    <img src="./images/konduit-mockup-home.png" alt="Konduit main screen" />
+
+    <div class="final-description">
+      <p>
+        The final interface presents crypto payments in a familiar, banking-like environment, making difficult concepts feel easy and approachable.
+      </p>
+
+      <h3>Key outcomes:</h3>
+      <ul>
+        <li>Clear navigation based on recognizable mental models</li>
+        <li>Minimal, distraction-free screens</li>
+        <li>A cohesive visual identity that supports clarity rather than competing with it</li>
+        <li>Reduced complexity in user flows after collaborative iteration</li>
+      </ul>
+    </div>
+
+    <img src="./images/konduit-mockup-pay.png" alt="Konduit QR payment screen" />
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+<p>© 2025 elisapaci</p>
+</footer>
+    
+</body>
+</html>
