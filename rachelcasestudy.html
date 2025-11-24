@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Rachel Naismith – UX/UI Website Rework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  background: linear-gradient(180deg, #0b1324, #121a2f);
+  color: #e6e6e6;
+}
+
+p, li, ul {
+  text-align: justify;
+  hyphens: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+        .case-hero {
+  padding: 80px 8% 40px;
+}
+
+.case-hero-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.case-hero-text {
+  flex: 1;
+}
+
+.case-hero h1 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 15px;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.intro {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #bfc7d8;
+}
+
+.case-hero-image {
+  flex: 1.2;
+}
+
+.case-hero-image img {
+  border-radius: 8px;
+}
+
+.case-context {
+  padding: 60px 8%;
+  display: flex;
+  gap: 80px;
+}
+
+.case-context h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.case-context p,
+.case-context li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #bfc7d8;
+}
+
+.case-context ul {
+  padding-left: 18px;
+}
+
+.before-after {
+  padding: 60px 8%;
+}
+
+.before-after h2 {
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.before-after-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+
+.improvements h3 {
+  margin-bottom: 15px;
+}
+
+.improvements li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #bfc7d8;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+  .final-considerations{
+    justify-content: center;
+    padding: 60px 8%;
+
+    .final-considerations p,
+    .final-considerations ul {
+  max-width: 100%;
+  }
+
+@media (max-width: 900px) {
+  .case-hero-content,
+  .case-context,
+  .wireframe-layout,
+  .final-interface {
+    flex-direction: column;
+    display: flex;
+  }
+
+
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="./index.html">elisapaci</a>
+        <a href="./info.html">info</a>
+        <a href="./logos.html">logos</a>
+        <a href="https://www.elisapaciphotography.com/">photos</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="case-hero">
+  <div class="case-hero-content">
+
+    <div class="case-hero-text">
+      <h1>Rachel Naismith - Website Rework</h1>
+      <p class="subtitle">
+        Food and travel writer's website rework
+        <br>
+        UX/UI Designer | 2025
+      </p>
+
+      <p class="intro">
+        Rachel Naismith approached this redesign with the goal of modernizing her online presence and creating a portfolio that feels timeless, professional, and easy to navigate. The updated structure aims to showcase her work clearly while maintaining a clean, editorial aesthetic that reflects her writing style.
+      </p>
+    </div>
+
+    <div class="case-hero-image">
+      <img src="./images/rachel-landing.jpg" alt="Rachel Naismith website overview" />
+    </div>
+
+  </div>
+</section>
+
+<!-- Overview + Key Considerations -->
+<section class="case-context">
+<div class="challenge">
+<h2>Overwiev:</h2>
+<p>
+Rachel’s previous website lacked visual hierarchy and organization, making it difficult for visitors—such as editors, collaborators, and readers—to quickly understand her areas of expertise or explore her recent publications. My goal was to simplify the experience, improve content discoverability, and create a polished, visually simple  design that supports her personal brand and is easy to maintain.
+</p>
+</div>
+
+
+<div class="key-considerations">
+<h2>Key considerations:</h2>
+<ul>
+  <ul>The original design presented several UX issues</ul>
+<li>Unclear navigation made it difficult for users to understand the scope of her work.</li>
+<li>Inconsistent use of color and layout resulted in a visual experience that felt unintentionally playful rather than professional.</li>
+<li>No obvious contact path, which could limit opportunities for potential clients or editors wanting to get in touch.</li>
+</ul>
+</div>
+</section>
+
+
+<!-- Before & After-->
+<section class="before-after">
+<h2>Before and after</h2>
+
+
+<div class="before-after-layout">
+<div class="before-after-image">
+<img src="./images/rachel-before-after.jpg" alt="Before and after screens" />
+</div>
+
+
+<div class="improvements">
+<h3>Improvements</h3>
+<ul>
+<li>The landing page now highlights recent articles, improving content discoverability and reducing user friction.</li>
+<li>Reorganized content into “Print” and “Online” categories, giving users a clear mental model of the writer’s portfolio and improving navigation.</li>
+<li>Introduced a minimal, grid-based layout to convey professionalism, reduce cognitive load, and ensure timeless visual appeal.</li>
+<li>Contacts added on the page footer to make contacting the writer seamless.</li>
+</ul>
+</div>
+</div>
+</section>
+
+
+<section class="final-considerations">
+  <div class="container">
+
+    <p>
+      While this was a self-initiated concept project, the redesign demonstrates clear UX and business value:
+    </p>
+
+    <ul>
+      <li>Improved readability and hierarchy, allowing visitors to find relevant articles faster</li>
+      <li>More polished personal brand, aligned with Rachel’s writing tone</li>
+      <li>Streamlined content architecture, reducing user friction</li>
+      <li>Clearer messaging, helping editors understand her strengths at a glance</li>
+    </ul>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+<p>© 2025 elisapaci</p>
+</footer>
+    
+</body>
+</html>

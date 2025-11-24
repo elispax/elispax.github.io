@@ -5,6 +5,11 @@
     font-family: 'Montserrat Alternates', sans-serif;
   }
 
+  p, li, ul {
+  text-align: justify;
+  hyphens: auto;
+}
+
 
   nav {
     display: flex;
