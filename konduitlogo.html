@@ -90,7 +90,7 @@ font-size: clamp(15px, 1.8vw, 18px);
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   gap: 40px;
-  align-items: start;
+  align-items: center;
 }
 
 @media (max-width: 900px) {
@@ -103,9 +103,14 @@ flex-direction: column;
 }
 }
 
+.konduit-logo-sketches {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .konduit-logo-sketches img {
-width: 100%;
-border-radius: 6px;
+max-width: 100%;
 }
 
 
