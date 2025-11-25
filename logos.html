@@ -41,8 +41,22 @@
   text-align: center;
 }
 
+.logo-item {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Logo images */
-.logo-item img {
+.logo-img {
   width: 100%;
   max-width: 320px;
   aspect-ratio: 1 / 1;
@@ -69,21 +83,25 @@
 <main>
   <section class="logos">
 
-    <article class="logo-item">
-        <a href="konduitlogo.html">
-          <img src="./images/konduit-logo.png" alt="Konduit.Channel logo">
-          </a>
-          <a href="./konduitlogo.html">Konduit.Channel</a>
+   <article class="logo-item">
+  <a href="konduitlogo.html" class="logo-link">
+    <img class="logo-img" src="./images/konduit-logo.png" alt="Konduit.Channel logo">
+    <span>Konduit.Channel</span>
+  </a>
+   </article>
+
+  <article class="logo-item">
+    <a href="subbitlogo.html" class="logo-link">
+      <img class="logo-img" src="./images/subbit-logo.png" alt="Subbit.xyz logo">
+      <span>Subbit.xyz</span>
+  </a>
   </article>
 
   <article class="logo-item">
-      <img src="./images/subbit-logo.png" alt="Subbit.xyz logo">
-      <p>Subbit.xyz</p>
-  </article>
-
-  <article class="logo-item">
-      <img src="./images/cl-logo.png" alt="Cardano Lightning logo">
-      <p>Cardano Lightning</p>
+    <a href="cllogo.html" class="logo-link">
+      <img class="logo-img" src="./images/cl-logo.png" alt="Cardano Lightning logo">
+      <span>Cardano Lightning</span>
+  </a>
   </article>
 
 </section>
