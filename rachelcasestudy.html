@@ -85,7 +85,7 @@ img {
 }
 
 .case-context p,
-.case-context li, {
+.case-context li {
   font-size: 18px;
   line-height: 1.8;
   color: #bfc7d8;
@@ -100,30 +100,69 @@ img {
 }
 
 .before-after h2 {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .before-after-layout {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
 }
 
-@media (max-width: 768px) {
-  .before-after-layout {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
+.before-after-image {
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.35);
+}
 
+.before-after-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: 520px;        /* change or remove if you want no crop */
+  object-fit: cover;        /* covers the box while preserving aspect */
+  border-radius: 8px;
+}
+
+
+@media (max-width: 768px) {
   .before-after {
     padding: 40px 6%;
   }
 
+  .before-after-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+    .before-after-image img {
+    max-height: none; /* let image be full height on mobile */
+    object-fit: contain; /* show whole image on small screens */
+  }
+
+  .improvements {
+    align-items: flex-start;
+  }
+}
+
+.improvements {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
 }
 
 .improvements h3 {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.improvements ul {
+  padding-left: 20px;
+  margin: 0;
 }
 
 .improvements li {
@@ -212,9 +251,11 @@ Rachel’s previous website lacked visual hierarchy and organization, making it 
 <div class="key-considerations">
 <h2>Key considerations:</h2>
   <p>The original design presented several UX issues</p>
+<ul>
 <li>Unclear navigation made it difficult for users to understand the scope of her work.</li>
 <li>Inconsistent use of color and layout resulted in a visual experience that felt unintentionally playful rather than professional.</li>
 <li>No obvious contact path, which could limit opportunities for potential clients or editors wanting to get in touch.</li>
+</ul>
 </div>
 </section>
 
