@@ -21,63 +21,6 @@ img {
   display: block;
 }
 
-.case-hero {
-  padding: 80px 8% 40px;
-}
-
-.case-hero-content {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-
-.case-hero-text {
-  flex: 1;
-}
-
-.case-hero h1 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 18px;
-  opacity: 0.8;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-
-.case-hero-image {
-  flex: 1.2;
-}
-
-.case-hero-image img {
-  border-radius: 8px;
-}
-
-.case-context {
-  padding: 60px 8%;
-  display: flex;
-  gap: 80px;
-}
-
-.case-context h2 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.case-context p,
-.case-context li {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #bfc7d8;
-}
-
-.case-context ul {
-  padding-left: 18px;
-}
 
 .wireframing {
   padding: 60px 8%;
@@ -88,21 +31,7 @@ img {
   font-weight: 500;
 }
 
-.wireframe-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 60px;
-}
 
-.approach h3 {
-  margin-bottom: 15px;
-}
-
-.approach li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #bfc7d8;
-}
 
 .final-interface {
   padding: 80px 8%;
@@ -159,7 +88,7 @@ img {
 <section class="case-hero">
   <div class="case-hero-content">
 
-    <div class="case-hero-text">
+    <div style="flex: 1;">
       <h1>Kond﻿uit App — UX/UI Case Study</h1>
       <p class="subtitle">
         Crypto payment mobile app<br>
@@ -172,8 +101,8 @@ img {
       </p>
     </div>
 
-    <div class="case-hero-image">
-      <img src="./images/konduit-overview.png" alt="Konduit app interface overview" />
+    <div style="flex: 1.2;">
+      <img src="./images/konduit-overview.png" alt="Konduit app interface overview" style="border-radius: 8px;"/>
     </div>
 
   </div>
@@ -205,9 +134,9 @@ Crypto actions are inherently complex and can be intimidating. The main challeng
 <h2>Wireframing and flow</h2>
 
 
-<div class="wireframe-layout">
+<div class="grid-section">
 <div class="wireframe-image">
-<img src="./images/konduit-wireframe.png" alt="Konduit wireframes and user flow" />
+<img src="./images/konduit-wireframe.png" alt="Konduit wireframes and user flow" style="border-radius: 8px;" />
 </div>
 
 

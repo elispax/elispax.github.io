@@ -12,52 +12,15 @@
     <style>
 
         * {
-  box-sizing: border-box;
+box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Montserrat Alternates", sans-serif;
-  background: linear-gradient(180deg, #0b1324, #121a2f);
-  color: #e6e6e6;
-}
-
-p, li, ul {
-  text-align: justify;
-  hyphens: auto;
-}
 
 img {
   max-width: 100%;
   display: block;
 }
 
-        .case-hero {
-  padding: 80px 8% 40px;
-}
-
-.case-hero-content {
-  display: flex;
-  gap: 60px;
-  align-items: center;
-}
-
-.case-hero-text {
-  flex: 1;
-}
-
-.case-hero h1 {
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.subtitle {
-  font-size: 18px;
-  opacity: 0.8;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
 
 .intro {
   font-size: 18px;
@@ -65,35 +28,6 @@ img {
   color: #bfc7d8;
 }
 
-.case-hero-image {
-  flex: 1.2;
-}
-
-.case-hero-image img {
-  border-radius: 8px;
-}
-
-.case-context {
-  padding: 60px 8%;
-  display: flex;
-  gap: 80px;
-}
-
-.case-context h2 {
-  font-size: 18px;
-  margin-bottom: 12px;
-}
-
-.case-context p,
-.case-context li {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #bfc7d8;
-}
-
-.case-context ul {
-  padding-left: 18px;
-}
 
 .before-after {
   padding: 60px 8%;
@@ -143,33 +77,6 @@ img {
     object-fit: contain; /* show whole image on small screens */
   }
 
-  .improvements {
-    align-items: flex-start;
-  }
-}
-
-.improvements {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 12px;
-}
-
-.improvements h3 {
-  margin-bottom: 12px;
-  font-size: 18px;
-}
-
-.improvements ul {
-  padding-left: 20px;
-  margin: 0;
-}
-
-.improvements li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-  color: #bfc7d8;
-}
 
 .container {
   max-width: 1100px;
@@ -218,7 +125,7 @@ img {
 <section class="case-hero">
   <div class="case-hero-content">
 
-    <div class="case-hero-text">
+    <div style="flex: 1;">
       <h1>Rachel Naismith - Website Rework</h1>
       <p class="subtitle">
         Food and travel writer's website rework
@@ -231,8 +138,8 @@ img {
       </p>
     </div>
 
-    <div class="case-hero-image">
-      <img src="./images/rachel-landing.jpg" alt="Rachel Naismith website overview" />
+    <div style="flex: 1.2;">
+      <img src="./images/rachel-landing.jpg" alt="Rachel Naismith website overview" style="border-radius: 8px;"/>
     </div>
 
   </div>
@@ -271,7 +178,7 @@ Rachel’s previous website lacked visual hierarchy and organization, making it 
 </div>
 
 
-<div class="improvements">
+<div class="approach">
 <h3>Improvements</h3>
 <ul>
 <li>The landing page now highlights recent articles, improving content discoverability and reducing user friction.</li>

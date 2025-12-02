@@ -31,7 +31,6 @@ padding: 0 6%;
 
 
 /* RESPONSIVE SECTION SPACING */
-.case-hero,
 .case-context,
 .design-process,
 .logo-evolution 
@@ -45,26 +44,6 @@ padding: clamp(40px, 6vw, 80px) 0;
 display: flex;
 gap: 60px;
 align-items: flex-start;
-}
-
-
-.case-hero-text {
-flex: 1;
-}
-
-
-.case-hero-image {
-flex: 0.6;
-display: flex;
-justify-content: flex-end;
-}
-
-
-.case-hero-image img {
-max-width: 320px;
-width: 100%;
-height: auto;
-border-radius: 8px;
 }
 
 
@@ -86,20 +65,11 @@ margin-bottom: 20px;
 font-size: clamp(15px, 1.8vw, 18px);
 }
 
-.design-process-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
+
 
 @media (max-width: 900px) {
 .case-hero-content {
 flex-direction: column;
-}
-  .design-process-layout {
-    grid-template-columns: 1fr;
-  }
 }
 }
 
@@ -114,21 +84,12 @@ max-width: 100%;
 }
 
 
-.approach {
-max-width: 600px;
-}
-
 
 @media (max-width: 768px) {
 .case-hero-content {
 flex-direction: column;
 }
 
-
-.case-hero-image {
-max-width: 100%;
-}
-}
 
 /* CONCEPT */
 .concept
@@ -137,47 +98,10 @@ max-width: 850px;
 }
 
 
-.case-context h2 {
-font-size: 18px;
-margin-bottom: 12px;
-}
-
-
-.case-context p,
-.case-context li {
-font-size: clamp(15px, 1.8vw, 18px);
-line-height: 1.8;
-color: #bfc7d8;
-}
-
-
-.case-context ul {
-padding-left: 18px;
-}
-
-
 /* DESIGN PROCESS */
 .design-process h2 {
 margin-bottom: 40px;
 font-weight: 500;
-}
-
-
-.design-process-layout {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 40px;
-}
-
-.approach h3 {
-margin-bottom: 15px;
-}
-
-
-.approach li {
-margin-bottom: 10px;
-line-height: 1.6;
-color: #bfc7d8;
 }
 
 
@@ -225,7 +149,7 @@ max-width: 100%;
         <div class="case-hero-content">
 
 
-        <div class="case-hero-text">
+        <div style="flex: 1;">
             <h1>Konduit.Channel - Logo Design</h1>
             <p class="subtitle">
             Crypto payment mobile app
@@ -240,8 +164,8 @@ max-width: 100%;
         </div>
 
 
-        <div class="case-hero-image">
-            <img src="./images/konduit-logo.png" alt="Konduit.Channel logo" />
+        <div style="flex: 0.6; display: flex; justify-content: flex-end;">
+            <img src="./images/konduit-logo.png" alt="Konduit.Channel logo" style="max-width: 320px; width: 100%; height: auto;"/>
         </div>
 
 
@@ -272,7 +196,7 @@ max-width: 100%;
     <h2>Design Process</h2>
 
 
-        <div class="design-process-layout">
+        <div class="grid-section">
             <div class="konduit-logo-sketches">
             <img src="./images/konduit-logo-sketches.jpg" alt="Sketches process" />
             </div>
