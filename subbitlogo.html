@@ -22,71 +22,10 @@ display: block;
 }
 
 
-/* GLOBAL CONTAINER */
-.container {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 6%;
-}
-
-
 /* RESPONSIVE SECTION SPACING */
-.case-hero,
 .case-context,
 .result {
 padding: clamp(40px, 6vw, 80px) 0;
-}
-
-
-/* HERO */
-.case-hero-content {
-display: flex;
-gap: 60px;
-align-items: flex-start;
-}
-
-
-.case-hero-text {
-flex: 1;
-}
-
-
-.case-hero h1 {
-font-size: clamp(20px, 3vw, 28px);
-font-weight: 500;
-margin-bottom: 10px;
-}
-
-.subtitle {
-font-size: clamp(14px, 2vw, 18px);
-opacity: 0.8;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-
-.intro {
-font-size: clamp(15px, 1.8vw, 18px);
-}
-
-@media (max-width: 900px) {
-.case-hero-content {
-flex-direction: column;
-}
-}
-
-
-@media (max-width: 768px) {
-.case-hero-content {
-flex-direction: column;
-}
-
-}
-
-/* CONCEPT */
-.concept
-.result {
-max-width: 850px;
 }
 
 
@@ -98,7 +37,7 @@ gap: 30px;
 }
 
 
-.concept
+.concept,
 .result {
 max-width: 100%;
 }
@@ -137,13 +76,13 @@ max-width: 100%;
 
 
             <p class="intro">
-            Subbit.xyz is a trustless subscription layer designed to manage decentralised, automated recurring payments without intermediaries. The visual identity was developed to reflect its role as infrastructure while remaining practical for digital use across interfaces and platforms.
+            Subbit.xyz is a <strong>trustless subscription layer</strong> designed to manage decentralised, automated recurring payments without intermediaries. The visual identity was developed to reflect its role as infrastructure while remaining practical for digital use across interfaces and platforms.
             </p>
         </div>
 
 
-        <div style="flex: 0.6; display: flex; justify-content: flex-end;">
-            <img src="./images/subbit-logo.png" alt="subbit logo" style="max-width: 320px; width: 100%; height: auto;"/>
+        <div class="case-hero-image">
+            <img src="./images/subbit-logo.png" alt="Subbit logo"/>
         </div>
 
 
@@ -157,11 +96,11 @@ max-width: 100%;
     <div class="container">
         <div class="concept">
         <h2>Concept</h2>
-        <p>The design is based on three practical objectives aligned with Subbit’s function:</p>
+        <p>The design is based on <strong>three practical objectives</strong> aligned with Subbit’s function:</p>
             <ul>
-            <li>Infrastructure Representation: the structured, geometric letterforms communicate stability, logic, and system reliability. Each letter box represents a distinct subscription package, reinforcing the idea that Subbit operates as a structured layer managing multiple recurring payment agreements. The design avoids decorative elements in favour of clarity and repeatable construction, supporting the perception of a protocol built for predictable, automated execution.</li>
-            <li>Subscription Continuiy: the sequential nature of the letters reflects ongoing, automated payment cycles. While each character is usable on its own, their combined form represents the continuous operation of the subscription layer.</li>
-            <li>Platform Compatibility: he rounded square containers support consistent display across product surfaces such as dashboards, app icons, interface components, and protocol visual markers.</li>
+            <li><strong>Infrastructure Representation</strong>: the structured, geometric letterforms communicate <strong>stability, logic, and system reliability</strong>. Each letter box represents a distinct subscription package, reinforcing the idea that Subbit operates as a structured layer managing multiple recurring payment agreements. The design avoids decorative elements in favour of <strong>clarity and repeatable construction</strong>, supporting the perception of a protocol built for predictable, automated execution.</li>
+            <li><strong>Subscription Continuiy</strong>: the <strong>sequential nature</strong> of the letters reflects ongoing, automated payment cycles</strong>. While each character is usable on its own, their combined form represents the continuous operation of the subscription layer.</li>
+            <li><strong>Platform Compatibility</strong>: the rounded square containers support <strong>consistent display</strong> across product surfaces such as dashboards, app icons, interface components, and protocol visual markers.</li>
             </ul>
         </div>
     </div>
@@ -169,17 +108,15 @@ max-width: 100%;
 
 
 <!-- RESULT -->
-<section>
-    <div class="result">
+<section class="result">
         <div class="container">
             <h2>Result</h2>
 
         <div class="result-text">
-            <ul>A clear, system-oriented visual identity that reflects Subbit.xyz’s role as a trustless subscription layer. The logo supports flexible deployment across digital products while maintaining consistency, legibility, and alignment with the platform’s technical purpose.</ul>
+            <ul>A clear, <strong>system-oriented visual identity</strong> that reflects Subbit.xyz’s role as a trustless subscription layer. The logo supports <strong>flexible deployment</strong> across digital products while maintaining consistency, legibility, and alignment with the platform’s technical purpose.</ul>
 
             <ul>The final design positions Subbit as a reliable protocol identity, focused on function, continuity, and usability within decentralised payment environments.</ul>
         </div>
-    </div>
     </div>
 </section>
 

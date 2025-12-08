@@ -1,197 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <title>Rachel Naismith – UX/UI Website Rework</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+<head>
+  <meta charset="utf-8">
+  <title>Rachel Naismith – UX/UI Website Rework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
 
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    <style>
+  <style>
 
-        * {
-box-sizing: border-box;
-}
-
-
-img {
-  max-width: 100%;
-  display: block;
-}
+    * {
+      box-sizing: border-box;
+    }
 
 
-.intro {
-  font-size: 18px;
-  line-height: 1.7;
-  color: #bfc7d8;
-}
+    img {
+      max-width: 100%;
+      display: block;
+    }
 
 
-.before-after {
-  padding: 60px 8%;
-}
+    #before-after h2 {
+      margin-bottom: 24px;
+      font-weight: 500;
+      font-size: 20px;
+    }
 
-.before-after h2 {
-  margin-bottom: 24px;
-  font-weight: 500;
-  font-size: 20px;
-}
+    #before-after {
+      padding: 60px 0;
+    }
 
-.before-after-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
-  gap: 48px;
-  align-items: start;
-}
+    @media (max-width: 768px) {
+      #before-after {
+        padding: 40px 6%;
+      }
+    }
 
-.before-after-image {
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 8px 24px rgba(2,6,23,0.35);
-}
-
-.before-after-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: 520px;        /* change or remove if you want no crop */
-  object-fit: cover;        /* covers the box while preserving aspect */
-  border-radius: 8px;
-}
-
-
-@media (max-width: 768px) {
-  .before-after {
-    padding: 40px 6%;
-  }
-
-  .before-after-layout {
-    grid-template-columns: 1fr;
-    gap: 28px;
-  }
-
-    .before-after-image img {
-    max-height: none; /* let image be full height on mobile */
-    object-fit: contain; /* show whole image on small screens */
-  }
-
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-  .final-considerations{
-    justify-content: center;
-    padding: 60px 8%;
-  }
-
-    .final-considerations p,
-    .final-considerations ul {
-  max-width: 100%;
-
-  }
-
-
-@media (max-width: 900px) {
-  .case-hero-content,
-  .case-context,
-  .wireframe-layout,
-  .final-interface {
-    flex-direction: column;
-    display: flex;
-  }
-
-
-}
-
-    </style>
+  </style>
 </head>
 <body>
 
-<header>
+  <header>
     <nav>
-        <a href="./index.html">elisapaci</a>
-        <a href="./info.html">info</a>
-        <a href="./logos.html">logos</a>
-        <a href="https://www.elisapaciphotography.com/">photos</a>
+      <a href="./index.html">elisapaci</a>
+      <a href="./info.html">info</a>
+      <a href="./logos.html">logos</a>
+      <a href="https://www.elisapaciphotography.com/">photos</a>
     </nav>
-</header>
+  </header>
 
-<main>
+  <main>
 
-<section class="case-hero">
-  <div class="case-hero-content">
+    <section class="case-hero">
+      <div class="container">
+        <div class="case-hero-content">
 
-    <div style="flex: 1;">
-      <h1>Rachel Naismith - Website Rework</h1>
-      <p class="subtitle">
-        Food and travel writer's website rework
-        <br>
-        UX/UI Designer | 2025
-      </p>
+          <div class="case-hero-text">
+            <h1>Rachel Naismith - Website Rework</h1>
+            <p class="subtitle">
+              Food and travel writer's website rework
+              <br>
+              UX/UI Designer | 2025
+            </p>
 
-      <p class="intro">
-        Rachel Naismith approached this redesign with the goal of modernizing her online presence and creating a portfolio that feels timeless, professional, and easy to navigate. The updated structure aims to showcase her work clearly while maintaining a clean, editorial aesthetic that reflects her writing style.
-      </p>
-    </div>
+            <p class="intro">
+              Rachel Naismith approached this redesign with the goal of <strong>modernizing her online presence</strong> and creating a portfolio that feels <strong>timeless, professional, and easy to navigate</strong>. The updated structure aims to showcase her work clearly while maintaining a <strong>clean, editorial aesthetic</strong> that reflects her writing style.
+            </p>
+          </div>
 
-    <div style="flex: 1.2;">
-      <img src="./images/rachel-landing.jpg" alt="Rachel Naismith website overview" style="border-radius: 8px;"/>
-    </div>
-
-  </div>
-</section>
+          <div class="case-hero-image">
+            <img src="./images/rachellanding.gif" alt="Rachel Naismith website overview" style="border-radius: 8px;"/>
+          </div>
+        </div>
+      </div>
+    </section>
 
 <!-- Overview + Key Considerations -->
 <section class="case-context">
-<div class="challenge">
-<h2>Overview:</h2>
-<p>
-Rachel’s previous website lacked visual hierarchy and organization, making it difficult for visitors—such as editors, collaborators, and readers—to quickly understand her areas of expertise or explore her recent publications. My goal was to simplify the experience, improve content discoverability, and create a polished, visually simple  design that supports her personal brand and is easy to maintain.
-</p>
-</div>
+  <div class="container">
+  <div id="challenge">
+    <h2>Overview:</h2>
+    <p>
+      Rachel’s previous website <strong>lacked visual hierarchy and organization</strong>, making it difficult for visitors—such as editors, collaborators, and readers—to quickly understand her areas of expertise or explore her recent publications. My goal was to <strong>simplify the experience, improve content discoverability, and create a polished, visually simple  design</strong> that supports her personal brand and is easy to maintain.
+    </p>
+  </div>
 
 
-<div class="key-considerations">
-<h2>Key considerations:</h2>
-  <p>The original design presented several UX issues</p>
-<ul>
-<li>Unclear navigation made it difficult for users to understand the scope of her work.</li>
-<li>Inconsistent use of color and layout resulted in a visual experience that felt unintentionally playful rather than professional.</li>
-<li>No obvious contact path, which could limit opportunities for potential clients or editors wanting to get in touch.</li>
-</ul>
+  <div class="key-considerations">
+    <h2>Key considerations:</h2>
+    <p>The original design presented several <strong>UX issues</strong></p>
+    <ul>
+      <li><strong>Unclear navigation</strong> made it difficult for users to understand the scope of her work.</li>
+      <li><strong>Inconsistent use of color and layout</strong> resulted in a visual experience that felt unintentionally playful rather than professional.</li>
+      <li><strong>No obvious contact path</strong>, which could limit opportunities for potential clients or editors wanting to get in touch.</li>
+    </ul>
+  </div>
 </div>
 </section>
 
 
 <!-- Before & After-->
-<section class="before-after">
-<h2>Before and after</h2>
+<section id="before-after">
+  <div class="container">
+    <h2>Before and after</h2>
 
 
-<div class="before-after-layout">
-<div class="before-after-image">
-<img src="./images/rachel-before-after.jpg" alt="Before and after screens" />
-</div>
+    <div class="grid-section">
+      <div class="grid-image">
+        <img src="./images/rachel-before-after.jpg" alt="Before and after screens" style="border-radius: 8px";/>
+      </div>
 
 
-<div class="approach">
-<h3>Improvements</h3>
-<ul>
-<li>The landing page now highlights recent articles, improving content discoverability and reducing user friction.</li>
-<li>Reorganized content into “Print” and “Online” categories, giving users a clear mental model of the writer’s portfolio and improving navigation.</li>
-<li>Introduced a minimal, grid-based layout to convey professionalism, reduce cognitive load, and ensure timeless visual appeal.</li>
-<li>Contacts added on the page footer to make contacting the writer seamless.</li>
-</ul>
-</div>
-</div>
+      <div class="approach">
+        <h3>Improvements</h3>
+        <ul>
+          <li>The landing page now highlights recent articles, <strong>improving content discoverability</strong> and <strong>reducing user friction</strong>.</li>
+          <li><strong>Reorganized content</strong> into “Print” and “Online” categories, giving users a <strong>clear mental model</strong> of the writer’s portfolio and <strong>improving navigation</strong>.</li>
+          <li>Introduced a <strong>minimal, grid-based layout</strong> to convey professionalism, <strong>reduce cognitive load</strong>, and ensure timeless visual appeal.</li>
+          <li>Contacts added on the page footer to make contacting the writer <strong>seamless</strong>.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
 
 
-<section class="final-considerations">
+<section class="result">
   <div class="container">
 
     <p>
@@ -199,23 +135,22 @@ Rachel’s previous website lacked visual hierarchy and organization, making it 
     </p>
 
     <ul>
-      <li>Improved readability and hierarchy, allowing visitors to find relevant articles faster</li>
-      <li>More polished personal brand, aligned with Rachel’s writing tone</li>
-      <li>Streamlined content architecture, reducing user friction</li>
-      <li>Clearer messaging, helping editors understand her strengths at a glance</li>
+      <li><strong>Improved readability and hierarchy</strong>, allowing visitors to find relevant articles faster</li>
+      <li>More <strong>polished personal brand</strong>, aligned with Rachel’s writing tone</li>
+      <li>Streamlined content architecture, <strong>reducing user friction</strong></li>
+      <li><strong>Clearer messaging</strong>, helping editors understand her strengths at a glance</li>
     </ul>
 
   </div>
+
 </section>
-
-
 
 </main>
 
 
 <footer>
-<p>© 2025 elisapaci</p>
+  <p>© 2025 elisapaci</p>
 </footer>
-    
+
 </body>
 </html>

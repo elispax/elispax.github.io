@@ -12,7 +12,6 @@
 
 
 <style>
-
 * {
 box-sizing: border-box;
 }
@@ -23,162 +22,17 @@ display: block;
 }
 
 
-/* GLOBAL CONTAINER */
-.container {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 6%;
-}
-
-
 /* RESPONSIVE SECTION SPACING */
-.case-hero,
-.case-context,
-.design-process,
-.result {
+#design-process,
+#logo-evolution  {
 padding: clamp(40px, 6vw, 80px) 0;
 }
 
 
-/* HERO */
-.case-hero-content {
-display: flex;
-gap: 60px;
-align-items: flex-start;
-}
-
-
-.case-hero-text {
-flex: 1;
-}
-
-
-.case-hero-image {
-flex: 0.6;
-display: flex;
-justify-content: flex-end;
-}
-
-
-.case-hero-image img {
-max-width: 320px;
-width: 100%;
-height: auto;
-border-radius: 8px;
-}
-
-
-.case-hero h1 {
-font-size: clamp(20px, 3vw, 28px);
-font-weight: 500;
-margin-bottom: 10px;
-}
-
-.subtitle {
-font-size: clamp(14px, 2vw, 18px);
-opacity: 0.8;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-
-.intro {
-font-size: clamp(15px, 1.8vw, 18px);
-}
-
-.design-process-layout {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: center;
-}
-
-@media (max-width: 900px) {
-.case-hero-content {
-flex-direction: column;
-}
-  .design-process-layout {
-    grid-template-columns: 1fr;
-  }
-}
-
-.cl-logo-process {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cl-logo-process img {
-max-width: 100%;
-}
-
-
-.approach {
-  width: 100%;
-}
-
-
-@media (max-width: 768px) {
-.case-hero-content {
-flex-direction: column;
-}
-
-
-.case-hero-image {
-max-width: 100%;
-}
-}
-
-/* CONCEPT */
-.concept,
-.result-text {
-max-width: 100%;
-}
-
-
-.case-context h2 {
-font-size: 18px;
-margin-bottom: 12px;
-}
-
-
-.case-context p,
-.case-context li {
-font-size: clamp(15px, 1.8vw, 18px);
-line-height: 1.8;
-color: #bfc7d8;
-}
-
-
-.case-context ul {
-padding-left: 18px;
-}
-
-
 /* DESIGN PROCESS */
-.design-process h2 {
+#design-process h2 {
 margin-bottom: 40px;
 font-weight: 500;
-}
-
-
-.approach h3 {
-margin-bottom: 15px;
-}
-
-
-.approach li {
-margin-bottom: 10px;
-line-height: 1.6;
-color: #bfc7d8;
-}
-
-
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-.case-hero-content {
-flex-direction: column;
-gap: 30px;
 }
 
 }
@@ -206,26 +60,24 @@ gap: 30px;
         <div class="case-hero-content">
 
 
-        <div class="case-hero-text">
-            <h1>Cardano Lightning - Logo Design</h1>
-            <p class="subtitle">
-            Blockchain infrastructure
-            <br>
-            Brand Designer | 2025
-            </p>
+            <div class="case-hero-text">
+                <h1>Cardano Lightning - Logo Design</h1>
+                <p class="subtitle">
+                    Blockchain infrastructure
+                    <br>
+                    Brand Designer | 2025
+                </p>
 
 
-            <p class="intro">
-            Cardano Lightning needed a logo that connects visually to its partner brand, Konduit.Channel, while representing its own identity within the Cardano ecosystem. The goal was to design a symbol that feels technical, fast, and highly functional across developer platforms — especially in environments like GitHub where circular avatars dominate.
-            </p>
-        </div>
+                <p class="intro">
+                   Cardano Lightning needed a <strong>logo that connects visually to its partner brand, Konduit.Channel, while representing its own identity</strong> within the Cardano ecosystem. The goal was to design a symbol that feels <strong>technical, fast, and highly functional</strong> across developer platforms — especially in environments like GitHub where circular avatars dominate.
+                </p>
+            </div>
 
 
-        <div class="case-hero-image">
-            <img src="./images/cl-logo.png" alt="Cardano Lightning logo" />
-        </div>
-
-
+            <div class="case-hero-image">
+                <img src="./images/cl-logo.png" alt="Cardano Lightning logo" style="border-radius: 8px;"/>
+            </div>
         </div>
     </div>
 </section>
@@ -236,36 +88,34 @@ gap: 30px;
     <div class="container">
         <div class="concept">
         <h2>Concept</h2>
-        <p>The symbol combines three core ideas behind the product:</p>
+        <p>The symbol combines <strong>three core ideas</strong> behind the product:</p>
             <ul>
-            <li>Triangle → “A” for ADA + The Blockchain Trilemmahe: the triangular structure reflects the “A” in ADA, Cardano’s native currency, but also the Blockchain trilemma (optimizing decentralization, scalability, and security) which Cardano is attempting at resolving.</li>
-            <li>Lightning → Speed, Multihop Payments + Shared Brand DNA: The lightning bolt is identical to the one used in Konduit.Channel’s logo, linking both projects through a shared design language.</li>
-            <li>Circle → Unity, Ouroboros, and Cross-Platform Identity: Cardano’s consensus algorithm is symbolized by a self-contained cycle of security and energy efficiency.The circular container brings all elements together, expressing stability and cross-chain communication.</li>
-            </ul>
+           <li><strong>Triangle → “A” for ADA + The Blockchain Trilemmahe</strong>: the triangular structure reflects the “A” in ADA, Cardano’s native currency, but also the Blockchain trilemma (optimizing decentralization, scalability, and security) which Cardano is attempting at resolving.</li>
+            <li><strong>Lightning → Speed, Multihop Payments + Shared Brand DNA</strong>: The lightning bolt is identical to the one used in Konduit.Channel’s logo, linking both projects through a shared design language.</li>
+            <li><strong>Circle → Unity, Ouroboros, and Cross-Platform Identity</strong>: Cardano’s consensus algorithm is symbolized by a self-contained cycle of security and energy efficiency.The circular container brings all elements together, expressing stability and cross-chain communication.</li>
         </div>
     </div>
 </section>
 
 
 <!-- DESIGN PROCESS -->
-<section class="design-process">
+<section id="design-process">
     <div class="container">
     <h2>Design Process</h2>
 
 
-        <div class="design-process-layout">
-            <div class="cl-logo-process">
-            <img src="./images/cl-logo-process.png" alt="logo process" />
+        <div class="grid-section">
+            <div class="grid-image">
+            <img src="./images/cl-logo-process.png" alt="logo process" style="border-radius: 8px;" />
             </div>
 
 
             <div class="approach">
-            <h3>Approach</h3>
                 <ul>
-                <li>Transformed the original angular mark into a cohesive emblem by introducing the circular frame.</li>
-                <li>Narrowed and refined the lightning bolt to enhance presence and match Konduit.Channel’s visual weight.</li>
-                <li>Applied Cardano’s signature blue to convey trust, technological sophistication, and ecosystem alignment.</li>
-                <li>Ensured the mark performs equally well as: standalone symbol, app icon, social media avatar and Open-source repository identifier</li>
+                <li>Transformed the original angular mark into a <strong>cohesive emblem</strong> by introducing the circular frame.</li>
+                <li>Narrowed and refined the lightning bolt to <strong>enhance presence</strong> and match Konduit.Channel’s visual weight.</li>
+                <li>Applied Cardano’s signature blue to <strong>convey trust, technological sophistication, and ecosystem alignment</strong>.</li>
+                <li>Ensured the mark performs equally well as: <strong>standalone symbol</strong>, <strong>app icon</strong>, <strong>social media avatar</strong> and Open-source <strong>repository identifier</strong></li>
                 </ul>
             </div>
         </div>
@@ -274,13 +124,15 @@ gap: 30px;
 
 
 <!-- RESULT -->
-<section class="result">
-  <div class="container">
+<section>
+    <div class="result">
+        <div class="container">
             <h2>Result</h2>
 
         <div class="result-text">
-            <p>An efficient logo system that unifies Cardano’s philosophical foundations with the real-time performance of Lightning technology. The final design balances symbolism and usability — expressing speed, decentralisation, and system integrity while remaining adaptable across modern digital environments. It successfully positions Cardano Lightning as both technically robust and visually aligned with the broader Cardano and Konduit brand ecosystem.</p>
+            <p>An <strong>efficient logo system</strong> that unifies Cardano’s philosophical foundations with the real-time performance of Lightning technology. The final design balances <strong>symbolism and usability</strong> — expressing speed, decentralisation, and system integrity while remaining <strong>adaptable across modern digital environments</strong>. It successfully positions Cardano Lightning as both technically robust and visually aligned with the broader Cardano and Konduit brand ecosystem.</p>
         </div>
+    </div>
     </div>
 </section>
 

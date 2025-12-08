@@ -22,76 +22,14 @@ display: block;
 }
 
 
-/* GLOBAL CONTAINER */
-.container {
-max-width: 1100px;
-margin: 0 auto;
-padding: 0 6%;
-}
-
-
 /* RESPONSIVE SECTION SPACING */
-.case-context,
-.design-process,
-.logo-evolution 
-.result {
+#design-process,
+#logo-evolution  {
 padding: clamp(40px, 6vw, 80px) 0;
 }
 
 
-/* HERO */
-.case-hero-content {
-display: flex;
-gap: 60px;
-align-items: flex-start;
-}
-
-
-.case-hero h1 {
-font-size: clamp(20px, 3vw, 28px);
-font-weight: 500;
-margin-bottom: 10px;
-}
-
-.subtitle {
-font-size: clamp(14px, 2vw, 18px);
-opacity: 0.8;
-line-height: 1.5;
-margin-bottom: 20px;
-}
-
-
-.intro {
-font-size: clamp(15px, 1.8vw, 18px);
-}
-
-
-
-@media (max-width: 900px) {
-.case-hero-content {
-flex-direction: column;
-}
-}
-
-.konduit-logo-sketches {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.konduit-logo-sketches img {
-max-width: 100%;
-}
-
-
-
 @media (max-width: 768px) {
-.case-hero-content {
-flex-direction: column;
-}
-
-
-/* CONCEPT */
 .concept
 .result {
 max-width: 850px;
@@ -99,31 +37,18 @@ max-width: 850px;
 
 
 /* DESIGN PROCESS */
-.design-process h2 {
+#design-process h2 {
 margin-bottom: 40px;
 font-weight: 500;
 }
 
 
 /* LOGO EVOLUTION */
-.logo-evolution img {
+#logo-evolution img {
 width: 100%;
 border-radius: 8px;
 }
 
-
-/* MOBILE OPTIMIZATION */
-@media (max-width: 768px) {
-.case-hero-content {
-flex-direction: column;
-gap: 30px;
-}
-
-
-.concept
-.result {
-max-width: 100%;
-}
 }
 
 </style>
@@ -149,26 +74,24 @@ max-width: 100%;
         <div class="case-hero-content">
 
 
-        <div style="flex: 1;">
-            <h1>Konduit.Channel - Logo Design</h1>
-            <p class="subtitle">
-            Crypto payment mobile app
-            <br>
-            Brand Designer | 2025
-            </p>
+            <div class="case-hero-text">
+                <h1>Konduit.Channel - Logo Design</h1>
+                <p class="subtitle">
+                    Crypto payment mobile app
+                    <br>
+                    Brand Designer | 2025
+                </p>
 
 
-            <p class="intro">
-            Konduit.Channel needed a logo that communicates fast, secure payments between blockchain networks. The goal was to create a mark that feels technical and modern while remaining simple and highly scalable for digital use.
-            </p>
-        </div>
+                <p class="intro">
+                    Konduit.Channel needed a logo that communicates <strong>fast, secure payments</strong> between blockchain networks. The goal was to create a mark that feels <strong>technical and modern</strong> while remaining <strong>simple and highly scalable for digital use</strong>.
+                </p>
+            </div>
 
 
-        <div style="flex: 0.6; display: flex; justify-content: flex-end;">
-            <img src="./images/konduit-logo.png" alt="Konduit.Channel logo" style="max-width: 320px; width: 100%; height: auto;"/>
-        </div>
-
-
+            <div class="case-hero-image">
+                <img src="./images/konduit-logo.png" alt="Konduit.Channel logo" style="border-radius: 8px;"/>
+            </div>
         </div>
     </div>
 </section>
@@ -181,9 +104,9 @@ max-width: 100%;
         <h2>Concept</h2>
         <p>The symbol combines three core ideas behind the product:</p>
             <ul>
-            <li>Brackets → Coding + Channel: Inspired by programming syntax, the brackets form an open “pipe,” representing the payment conduit between blockchains.</li>
-            <li>Lightning → Speed + Bitcoin Lightning Network: The central bolt references the Lightning Network, the technology enabling instant Bitcoin payments within the app.</li>
-            <li>Circle → Unity + Interoperability: The circular container brings all elements together, expressing stability and cross-chain communication.</li>
+            <li><strong>Brackets → Coding + Channel</strong>: Inspired by programming syntax, the brackets form an open “pipe,” representing the payment conduit between blockchains.</li>
+            <li><strong>Lightning → Speed + Bitcoin Lightning Network</strong>: The central bolt references the Lightning Network, the technology enabling instant Bitcoin payments within the app.</li>
+            <li><strong>Circle → Unity + Interoperability</strong>: The circular container brings all elements together, expressing stability and cross-chain communication.</li>
             </ul>
         </div>
     </div>
@@ -191,25 +114,24 @@ max-width: 100%;
 
 
 <!-- DESIGN PROCESS -->
-<section class="design-process">
+<section id="design-process">
     <div class="container">
     <h2>Design Process</h2>
 
 
         <div class="grid-section">
-            <div class="konduit-logo-sketches">
-            <img src="./images/konduit-logo-sketches.jpg" alt="Sketches process" />
+            <div class="grid-image">
+            <img src="./images/konduit-logo-sketches.jpg" alt="Sketches process" style="border-radius: 8px;" />
             </div>
 
 
             <div class="approach">
-            <h3>Approach</h3>
                 <ul>
-                <li>Explored variations of pipes representations to symbolize the conduit idea.</li>
-                <li>Tested different shapes and sizes for the lightning.</li>
-                <li>Opted for brackets as a minimal image of both code symbols and directional channels.</li>
-                <li>Tested the symbol at small sizes to ensure strong in-app performance.</li>
-                <li>Applied both a solid color and a gradient palette to reflect energy, movement, and modern crypto aesthetics and make it adaptable to context.</li>
+                <li>Explored variations of pipes representations to <strong>symbolize the conduit idea</strong>.</li>
+                <li><strong>Tested</strong> different <strong>shapes and sizes</strong> for the lightning.</li>
+                <li>Opted for <strong>brackets</strong> as a minimal image of both <strong>code symbols and directional channels</strong>.</li>
+                <li>Tested the symbol at small sizes to <strong>ensure strong in-app performance</strong>.</li>
+                <li>Applied both a <strong>solid color and a gradient palette</strong> to reflect energy, movement, and modern crypto aesthetics and make it <strong>adaptable to context</strong>.</li>
                 </ul>
             </div>
         </div>
@@ -218,7 +140,7 @@ max-width: 100%;
 
 
 <!-- LOGO EVOLUTION -->
-<section class="logo-evolution">
+<section id="logo-evolution">
     <div class="container">
         <img src="./images/konduit-logo-process.png" alt="Konduit logo evolution">
     </div>
@@ -231,7 +153,7 @@ max-width: 100%;
             <h2>Result</h2>
 
         <div class="result-text">
-            <p>A distinctive, scalable logo that represents Konduit.Channel’s core purpose: fast, reliable, cross-chain payments powered by the Bitcoin Lightning Network.</p>
+            <p>A <strong>distinctive, scalable logo</strong> that represents Konduit.Channel’s core purpose: <strong>fast, reliable, cross-chain payments</strong> powered by the Bitcoin Lightning Network.</p>
         </div>
     </div>
     </div>
