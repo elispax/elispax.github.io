@@ -47,6 +47,14 @@
     box-sizing: border-box;
   }
 
+  .project img {
+  width: 100%;
+  aspect-ratio: 4 / 3;     
+  object-fit: cover;        
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
 @media (max-width: 900px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -64,14 +72,6 @@
 }
 
 
-  .project img {
-  width: 100%;
-  aspect-ratio: 4 / 3;     
-  object-fit: cover;        
-  padding: 16px;
-  border-radius: 6px;
-  box-sizing: border-box;
-}
 
 }
 </style>
