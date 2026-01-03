@@ -214,12 +214,13 @@ border-radius: 8px;
 
 .info-text {
   flex: 1;
+  justify-content: center;
 }
 
 .info-image {
   flex: 1;
-  display: flex;
   justify-content: center;
+  display: flex;
 }
 
 .info-image img {
