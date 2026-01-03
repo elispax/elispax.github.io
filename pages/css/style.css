@@ -207,6 +207,7 @@ border-radius: 8px;
 
 .info-container {
   display: flex;
+  justify-content: center;
   gap: 60px;
   align-items: center;
 }
